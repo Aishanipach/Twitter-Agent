@@ -1,0 +1,11 @@
+app twitterAgent {
+  wasp: {
+    version: "^0.12.3"
+  },
+  title: "twitter-agent"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import { MainPage } from "@src/MainPage"
+}
