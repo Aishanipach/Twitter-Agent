@@ -21,4 +21,9 @@ This application leverages the Twitter API and features entities such as Tweet, 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white)
 ![Wasp](https://img.shields.io/badge/-Wasp-563D7C?logo=wasp&logoColor=white)
 ![Langchain](https://img.shields.io/badge/-Langchain-FFAC45?logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white)
+![OpenAPI](https://img.shields.io/badge/-OpenAPI-6C89B1?logo=openapi-initiative&logoColor=white)
+![Pinecone](https://img.shields.io/badge/-Pinecone-00875A?logo=pinecone&logoColor=white)
+
 
