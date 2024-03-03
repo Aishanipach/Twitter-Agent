@@ -1,13 +1,16 @@
 app twitterAgent {
   wasp: {
-    version: "^0.10.6"
+    version: "^0.11.0"
   },
   title: "twitter-agent",
-    head: [
-    "<script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>"
-  ],
+  client: {
+    rootComponent: import App from "@client/App",
+  },
   db: { 
     system: PostgreSQL,
+    seeds: [
+      import { getTwitterTokens } from "@server/scripts/tokens.js",
+    ]
   },
   auth: {
     userEntity: User,
@@ -30,7 +33,7 @@ app twitterAgent {
 // ### Database Models
 
 entity Tweet {=psl
-  id              Int           @id @default(autoincrement())
+	id              Int           @id @default(autoincrement())
   tweetId         String        
   authorUsername  String
   content         String
@@ -82,3 +85,28 @@ page MainPage {
   authRequired: true,
   component: import Main from "@client/MainPage"
 }
+
+route LoginPageRoute { path: "/login", to: LoginPage }
+page LoginPage {
+  component: import Login from "@client/LoginPage"
+}
+
+route AccountRoute { path: "/account", to: AccountPage }
+page AccountPage {
+  authRequired: true,
+  component: import Account from "@client/AccountPage"
+}
+
+route NotesPage { path: "/notes", to: NotesPage }
+page NotesPage {
+  authRequired: true,
+  component: import Notes from "@client/NotesPage"
+}
+
+// !!! Actions
+
+action embedIdea {
+  fn: import { embedIdea } from "@server/ideas.js",
+  entities: [GeneratedIdea]
+}
+
