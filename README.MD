@@ -22,4 +22,3 @@ This application leverages the Twitter API and features entities such as Tweet, 
 ![Wasp](https://img.shields.io/badge/-Wasp-563D7C?logo=wasp&logoColor=white)
 ![Langchain](https://img.shields.io/badge/-Langchain-FFAC45?logoColor=white)
 
-This markdown provides an organized overview of the key components and functionalities of the Tweety application.
