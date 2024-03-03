@@ -1,8 +1,13 @@
-TypeScript and defines a web application called TweetAgent which is your helper elve to simplify tweet brainstorming using Langchain.
+# Tweety
+```TypeScript``` based helper elve to simplify tweet brainstorming using Langchain.
 
-This project is to primarily test and push limits of hybrid framework Wasp, recently booming in the market via their templates like OpenSaas.
+### This project is to primarily test and push limits of hybrid framework Wasp, recently booming in the market via their templates like OpenSaas.
+
+
+## Entities & About
 
 This application uses the Twitter API and has entities such as Tweet, TweetDraft, and GeneratedIdea.
+
 
 Here's a brief overview of the different parts of the code:
 
