@@ -1,20 +1,25 @@
-# Tweety
-```TypeScript``` based helper elve to simplify tweet brainstorming using Langchain.
+# Tweety 🐤
 
-### This project is to primarily test and push limits of hybrid framework Wasp, recently booming in the market via their templates like OpenSaas.
-
+Tweety is a TypeScript-based helper tool designed to simplify tweet brainstorming using Langchain. This project serves as a testing ground to explore and push the limits of the hybrid framework Wasp, which has recently gained popularity in the market with templates like OpenSaas.
 
 ## Entities & About
 
-This application uses the Twitter API and has entities such as Tweet, TweetDraft, and GeneratedIdea.
+This application leverages the Twitter API and features entities such as Tweet, TweetDraft, and GeneratedIdea.
 
+### Code Overview
 
-Here's a brief overview of the different parts of the code:
+- **App Syntax**: The app syntax is utilized to define the twitterAgent application, incorporating essential details such as version, title, database setup, authentication, and dependencies.
 
-The app syntax is used to define the twitterAgent application, which includes information about its version, title, database, authentication, and dependencies.
+- **Database Models**: The code defines four entities representing various concepts within the application: Tweet, TweetDraft, GeneratedIdea, and User. These entities are structured using the entity syntax and encompass properties such as id, content, createdAt, etc. Additionally, they establish relationships with each other, such as User having many Tweet, TweetDraft, and GeneratedIdea entities.
 
-Database models: The code defines four entities that represent different concepts in the application: Tweet, TweetDraft, GeneratedIdea, and User. These entities are defined using the entity syntax and have various properties such as id, content, createdAt, etc. They also have relationships with each other, such as User having many Tweet, TweetDraft, and GeneratedIdea entities.
+- **Client Pages & Routes**: This section of the code, although brief, outlines client pages and routes. Currently, it includes comments and a LoginPageRoute.
 
-Client pages & routes: This section of the code appears to be incomplete, as it only includes a few comments and a LoginPageRoute.
+- **Actions**: An action named `embedIdea` is defined within the codebase. This action is imported from a server-side module located at `@server/ideas.js`. Its purpose is to modify the GeneratedIdea entity.
 
-Actions: The code defines an action called embedIdea, which is imported from a server-side module called @server/ideas.js. This action modifies the GeneratedIdea entity.
+### Technologies Used
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white)
+![Wasp](https://img.shields.io/badge/-Wasp-563D7C?logo=wasp&logoColor=white)
+![Langchain](https://img.shields.io/badge/-Langchain-FFAC45?logoColor=white)
+
+This markdown provides an organized overview of the key components and functionalities of the Tweety application.
