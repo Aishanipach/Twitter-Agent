@@ -1,5 +1,5 @@
-import waspLogo from './waspLogo.png'
-import './Main.css'
+import waspLogo from "./waspLogo.png";
+import "./Main.css";
 
 export const MainPage = () => {
   return (
@@ -37,5 +37,5 @@ export const MainPage = () => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};

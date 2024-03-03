@@ -3,14 +3,11 @@ app twitterAgent {
     version: "^0.11.0"
   },
   title: "twitter-agent",
-  client: {
-    rootComponent: import App from "@client/App",
-  },
+    head: [
+    "<script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>"
+  ],
   db: { 
     system: PostgreSQL,
-    seeds: [
-      import { getTwitterTokens } from "@server/scripts/tokens.js",
-    ]
   },
   auth: {
     userEntity: User,
@@ -80,28 +77,7 @@ psl=}
 
 // <<< Client Pages & Routes
 
-route RootRoute { path: "/", to: MainPage }
-page MainPage {
-  authRequired: true,
-  component: import Main from "@client/MainPage"
-}
 
-route LoginPageRoute { path: "/login", to: LoginPage }
-page LoginPage {
-  component: import Login from "@client/LoginPage"
-}
-
-route AccountRoute { path: "/account", to: AccountPage }
-page AccountPage {
-  authRequired: true,
-  component: import Account from "@client/AccountPage"
-}
-
-route NotesPage { path: "/notes", to: NotesPage }
-page NotesPage {
-  authRequired: true,
-  component: import Notes from "@client/NotesPage"
-}
 
 // !!! Actions
 
@@ -110,3 +86,7 @@ action embedIdea {
   entities: [GeneratedIdea]
 }
 
+route LoginPageRoute { path: "/login", to: LoginPage }
+page LoginPage {
+  component: import Login from "@client/LoginPage"
+}
