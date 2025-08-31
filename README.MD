@@ -1,4 +1,4 @@
-# Tweety 🐤
+# (XG) Tweety 🐤
 [Work in progress ⚙️]
 Tweety is a TypeScript-based helper tool designed to simplify tweet brainstorming using Langchain. This project serves as a testing ground to explore and push the limits of the hybrid framework Wasp, which has recently gained popularity in the market with templates like OpenSaas.
 
